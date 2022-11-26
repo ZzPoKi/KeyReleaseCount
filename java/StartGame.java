@@ -81,7 +81,7 @@ public class StartGame extends JFrame implements ActionListener, KeyListener {
     public void actionPerformed(ActionEvent e) {
         this.requestFocus(true);
         if (e.getSource() == startGameButton) {
-            File f = new File("D:\\osu!\\osu!.exe");
+            File f = new File("D:\\??\\??\\osu!.exe");//此处传递osu!.exe文件的绝对路径
             Runtime r = Runtime.getRuntime();
             try {
                 r.exec(f.getAbsolutePath());
@@ -107,7 +107,7 @@ public class StartGame extends JFrame implements ActionListener, KeyListener {
             }
         }
         if (e.getSource() == endGameButton) {
-            File f = new File("D:\\osu!\\osu!.exe");
+            File f = new File("D:\\??\\??\\osu!.exe");//传递exe文件的绝对路径
             Runtime r = Runtime.getRuntime();
             try {
                 r.exec(f.getAbsolutePath());
